@@ -92,6 +92,13 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# Python 2 sucks
+alias python='python3'
+alias pip='pip3'
+
+# oops
+alias fuck='sudo !!'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -115,3 +122,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+. /home/malits/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
