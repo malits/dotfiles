@@ -1,2 +1,2 @@
 #!/bin/sh
-'feh' '--bg-scale' 'seaside_city.jpg' 
+'feh' '--bg-scale' '/home/malits/Pictures/wallpapers/minimal_places.jpg' 

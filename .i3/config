@@ -40,7 +40,7 @@ gaps outer 15
 set $mod Mod4
 
 # set wallpaper on loading
-exec --no-startup-id feh --bg-scale ~/Pictures/wallpapers/seaside-city.jpg
+exec --no-startup-id "feh --bg-scale ~/Pictures/wallpapers/minimal_places.jpg"
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
@@ -204,4 +204,15 @@ bar {
     font pango:Inconsolata 8
 }
 
-exec xrandr --dpi 160
+# make things look less ugly
+exec --no-startup-id gnome-settings-daemon
+
+# wireless selection
+exec --no-startup-id nm-applet
+
+# sound management
+exec --no-startup-id gnome-sound-applet
+
+# lock the screen
+bindsym $mod+Shift+o exec "gnome-screensaver-command --lock "
+
